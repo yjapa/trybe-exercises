@@ -1,0 +1,19 @@
+div:nth-child(1) :hover{
+  border: 2px solid red;
+}
+
+div:nth-child(2) :hover{
+  border: 2px solid blue;
+}
+
+div:nth-child(3) :hover{
+  border: 2px solid green;
+}
+
+div:nth-child(4) :hover{
+  border: 2px solid black;
+}
+
+div:nth-child(5) :hover{
+  border: 2px solid yellow;
+}
