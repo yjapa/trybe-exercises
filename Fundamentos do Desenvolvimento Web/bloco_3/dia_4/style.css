@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background-color: #024b61;
+  display: flex;
+
+  padding: 20px;
+}
+
+.titulo {
+  color: white;
+  font-family: Verdana, sans-serif;
+  margin-left: 100px;
+}
