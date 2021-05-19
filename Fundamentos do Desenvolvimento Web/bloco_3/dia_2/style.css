@@ -1,0 +1,30 @@
+h1 {
+    font-family: sans-serif;
+    font-size: 65px;
+    color: orange;
+}
+.list-paragraph{
+    background-color: peru;
+}
+p{
+  font-size: 3em;
+  font-weight: 600;
+}
+body{
+  font-size: 16px;
+}
+li{
+  font-style: italic;
+  line-height: 30px;
+  text-align: start;
+  text-decoration: underline;
+}
+#fundoamarelo{
+  background-color: yellow;
+}
+#fundovermelho{
+  background-color: red;
+}
+#fundomarrom{
+  background-color: brown;
+}
