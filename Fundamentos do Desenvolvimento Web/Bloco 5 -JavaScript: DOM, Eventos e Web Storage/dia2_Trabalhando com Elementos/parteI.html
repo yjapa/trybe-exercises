@@ -24,10 +24,18 @@
     let elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
 
     let pai = elementoOndeVoceEsta.parentElement;
-    pai.style.color = "red";
+    pai.style.color = "green";
 
     let primeiroFilhoDoFilho = elementoOndeVoceEsta.firstElementChild;
     primeiroFilhoDoFilho.innerText = 'Olá! Bem-vindo (a)';
+
+    let primeiroFilho = pai.firstElementChild;
+
+    let primeiroFilhoOVE = elementoOndeVoceEsta.previousElementSibling;
+
+    let atencao = elementoOndeVoceEsta.nextSibling;
+    
+
   </script>
 </body>
 </html>
