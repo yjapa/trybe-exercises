@@ -30,12 +30,12 @@ redirecionar.addEventListener('dblclick', function (){
 
 // podemos utilizar window.replace ou window.assing ( a diferença é que não abrem em outra aba e o replace não volta no browser)
 
-redirecionar.addEventListener('mouseover', function (e){
-  e.target.style.color = 'red';
+redirecionar.addEventListener('mouseover', function (eventoMouse){
+  eventoMouse.target.style.color = 'red';
 })
 
-redirecionar.addEventListener('mouseout', function (e){
-  e.target.style.color = 'white';
+redirecionar.addEventListener('mouseout', function (eventoMouse){
+  eventoMouse.target.style.color = 'white';
 })
 
 function resetText(event) {
