@@ -11,12 +11,18 @@
 
 // Função verifica formato data
 
-let data = document.getElementById('input-date');
-let regex = /^\d\d\/\d\d\/\d\d\d\d$/;
+let button = document.getElementById('button');
 
-function formatDate () {
-  if(data.value !== regex) {
-    return 'data inválida'
+button.addEventListener('click',(event) => {
+  event.preventDefault();
+  let data = document.getElementById('input-date').value;
+  let data = /^\d\d\/\d\d\/\d\d\d\d$/;
+  if(!data.test(input.value)){
+    return {
+      message: 'Data: Formato inválido'
+    };
   }
-}
+}) 
+
+
 
