@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Contagem e Limite de Caracteres</title>
+</head>
+<body>
+    <textarea name="msg" id="msg" cols="60" rows="10" maxlength="500  "></textarea>
+    <div class="result">Máximo de caracteres: 500</div>
+    <script src="javascript.js"></script>
+</body>
+<script>
+    let msg = document.querySelector('#msg');
+    msg.addEventListener('input',(event)=>{
+        let sub=event.target.maxLength - event.target.textLength;
+        document.querySelector('.result').innerHTML=`Máximo de caracteres: ${sub}`;
+    },false);
+</script>
+</html>
