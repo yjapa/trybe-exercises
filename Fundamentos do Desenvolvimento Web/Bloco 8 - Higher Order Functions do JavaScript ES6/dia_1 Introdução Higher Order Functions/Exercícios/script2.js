@@ -6,3 +6,5 @@ const numeroAleatorio = (apostado, func) => {
 };
 
 console.log(numeroAleatorio(5, verificarNumero));
+
+
