@@ -1,5 +1,4 @@
 const assert = require('assert');
-const { DH_CHECK_P_NOT_SAFE_PRIME } = require('constants');
 
 const books = [
   {
@@ -64,38 +63,39 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
-
 const expectedResult = [
-  {
-    age: 31,
-    author: 'Isaac Asimov',
+  { 
+    id: 1,
+    name: 'As Crônicas de Gelo e Fogo',
+    genre: 'Fantasia',
+    author: { name: 'George R. R. Martin', birthYear: 1948 },
+    releaseYear: 1991
   },
   {
-    age: 38,
-    author: 'H. P. Lovecraft',
+    id: 2,
+    name: 'O Senhor dos Anéis',
+    genre: 'Fantasia',
+    author: { name: 'J. R. R. Tolkien', birthYear: 1892 },
+    releaseYear: 1954
   },
   {
-    age: 39,
-    author: 'Stephen King',
+    id: 3,
+    name: 'Fundação',
+    genre: 'Ficção Científica',
+    author: { name: 'Isaac Asimov', birthYear: 1920 },
+    releaseYear: 1951
   },
   {
-    age: 43,
-    author: 'George R. R. Martin',
-  },
-  {
-    age: 45,
-    author: 'Frank Herbert',
-  },
-  {
-    age: 62,
-    author: 'J. R. R. Tolkien',
-  },
+    id: 4,
+    name: 'Duna',
+    genre: 'Ficção Científica',
+    author: { name: 'Frank Herbert', birthYear: 1920 },
+    releaseYear: 1965
+  }
 ];
 
+const fantasyOrScienceFiction = books.filter(book => book.genre === 'Ficção Científica' || book.genre === 'Fantasia');
 
-const nameAndAge = books.map(book => ({age: book.releaseYear - book.author.birthYear,author: book.author.name,})).sort((a, b) => a.age - b.age)
- 
-console.log(nameAndAge);
+console.log(fantasyOrScienceFiction);
 
-assert.deepStrictEqual(nameAndAge, expectedResult);
+assert.deepStrictEqual(fantasyOrScienceFiction, expectedResult);
