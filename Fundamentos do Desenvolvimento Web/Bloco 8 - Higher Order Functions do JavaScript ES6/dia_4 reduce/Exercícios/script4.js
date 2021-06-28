@@ -1,5 +1,3 @@
-const assert = require('assert');
-
 const books = [
   {
     id: 1,
@@ -63,15 +61,4 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
-
-const expectedResult = 43;
-
-function averageAge() {
-  // escreva seu código aqui
-  return books.map(book => book.releaseYear - book.author.birthYear).reduce((accumulator, currentValue) => (accumulator + currentValue)) / books.length;
-}
-
-console.log(averageAge());
-
-assert.strictEqual(averageAge(), expectedResult);
+// Adicione o código do exercício aqui:a
