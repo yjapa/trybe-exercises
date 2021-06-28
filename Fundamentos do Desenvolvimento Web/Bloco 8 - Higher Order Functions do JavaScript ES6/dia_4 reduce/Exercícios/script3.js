@@ -63,7 +63,7 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
+// Adicione o código do exercício aqui:a
 
 const expectedResult = 43;
 
