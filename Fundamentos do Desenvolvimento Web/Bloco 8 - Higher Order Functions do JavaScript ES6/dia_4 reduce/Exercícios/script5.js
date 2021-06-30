@@ -6,19 +6,10 @@ const names = [
   'Abeladerco', 'Adieidy', 'Alarucha',
 ];
 
-function containsA() {
-  return names.reduce((acc, curr) =>
-     acc + curr.split('').reduce((acumulator, current) => {
-        if (current === 'a' || current === 'A') {
-          return acumulator += 1;
-        } else {
-          return acumulator;
-        }
-     }, 0),0);
-}
+const containsA = names.reduce((accumulator, currentValue) => accumulator + currentValue.toLowerCase().split('a').length - 1, '')
 
-console.log(containsA());
+console.log(containsA);
 
-assert.deepStrictEqual(containsA(), 20);
+assert.deepStrictEqual(containsA, 20);
 
 // assert.deepStrictEqual(containsA(), 20);
