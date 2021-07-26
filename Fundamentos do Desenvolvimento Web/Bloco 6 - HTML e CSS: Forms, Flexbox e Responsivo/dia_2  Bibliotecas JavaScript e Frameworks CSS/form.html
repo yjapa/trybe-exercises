@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+  <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.min.css">
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+<form>
+  <fieldset>
+    <div class="mb-3">
+      <label for="input-name">Nome:
+        <input type="text" name="nome" id="input-name" maxlength="40" required>
+      </label>
+    </div >
+    <div class="mb-3">
+      <label for="input-email">Email:
+        <input type="email" name="email" id="input-email" maxlength="50" required>
+      </label>
+    </div >
+    <div class="mb-3">
+      <label for="input-cpf">CPF:
+        <input type="text" name="cpf" id="input-cpf" maxlength="11" required>
+      </label>
+    </div class="mb-3">
+    <div class="mb-3">
+      <label for="input-address">Endereço:
+        <input type="text" name="address" id="input-address" maxlength="200" required>
+      </label>
+    </div >
+    <div class="mb-3">
+      <label for="input-city">Cidade:
+        <input type="text" name="city" id="input-city" maxlength="28" required>
+      </label>
+    </div >
+    <div class="mb-3">
+      <label for="input-state">Estado:
+        <select name="estado" id="input-state" required></select>
+    </div >
+    <div class="mb-3 form-check">
+      <label for="input-house">
+        <input type="radio" id="input-house" name="home" value="casa" required>Casa
+    </div >
+    <div class="mb-3 form-check">
+      <label for="input-apartment">
+        <input type="radio" id="input-apartment" name="home" value="apartamento" required>Apartamento
+    </div >
+  </fieldset>
+
+  <fieldset>
+    <p>Resumo do Currículo:</p>
+    <textarea class="mb-3 form-control" name="curriculo" id="input-curriculo" cols="30" rows="8" maxlength="1000" required></textarea>
+    <div class="mb-3">
+      <label for="input-charge">Cargo:
+        <input type="text" name="charge" id="input-charge" maxlength="40" required>
+      </label>
+    </div >
+    <div class="mb-3">
+      <label for="input-chargeDescription">Descrição do Cargo:
+        <input type="text" name="charge-description" id="input-chargeDescription" maxlength="500" required>
+      </label>
+    </div >
+    <div class="mb-3">
+      <label for="input-date">Data de ínicio:
+        <input type="text" name="date" id="input-date"  required>
+      </label>
+    </div >
+    <button type="submit" id="button">Enviar</button>
+  </fieldset>
+</form>
+<script src="script.js"></script>
+</body>
+</html>

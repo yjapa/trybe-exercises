@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="style.css">
+    <title>Stomatopoda</title>
+    <html lang="pt-br"></html>
   </head>
   <body>
     <header>
-      <div class="menu">
+      <nav class="menu">
         <ul>
-          <li><a href="#paginainicial">Página Inicial</a></li>
+          <li id="paginainicial"><a href="#paginainicial">Página Inicial</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
-      </div>
-      <h1 class="titulo">Conheça o Stomatopoda:<br>Soco a 80km/h </h1>
+      </nav>
+      <h1>Conheça o Stomatopoda:<br>Soco a 80km/h </h1>
 
       <svg
         class="waves"
@@ -41,8 +43,51 @@
       </svg>
     </header>
 
-    <section>
-      <h1>Another section</h1>
-    </section>
+    <article class="interessante">
+      <section class="secao1">
+        <h1 id="sobre">Sobre o Stomatopoda</h1>
+        <h2>Informações</h2>
+          <div>
+            <p class="text-left">
+              Nome Científico: <em>Odontodactylus Scyllarus</em><br>
+              Reino:	Animalia<br>
+              Filo:	Arthropoda<br>
+              Subfilo:	Crustacea<br>
+              Classe:	Malacostraca<br>
+              Subclasse:	Hoplocarida<br>
+             </p>
+          </div>
+             <img class="text-right" src="mantis.png" alt="Ilustação do animal" width="550px">
+          </div>
+        </div>
+      </section> 
+      <section class="secao2"> 
+        <div>
+          <h1>Fatos Interessantes</h1>
+          <p class="text-fatos">
+            Estes animais tem olhos incríveis! Possuem três pontos focais capazes de enxergar do espectro ultravioleta ao infravermelho. Apesar de sua aparência inofensiva, são capazes de desferir um dos socos mais rápidos e violentos do reino animal podendo chegar a <b><u>80km/h</u></b>, similar a uma arma calibre .22. O soco deste animal tem força de impacto de 60 kg/cm² e não é atoa que é chamada de "lagosta-boxeadora".
+          </p>
+          <img class="imagem2" src="socomantis.png" alt="Ilustração Soco do Animal">
+        </div>
+      </section>
+      <section class="secao3">
+        <h1>Bibliográfia</h1>
+        <ul class="ref">
+          <li><a href="https://pt.wikipedia.org/wiki/Stomatopoda" target="_blank" alt="link referencia do site Wikipedia">⟶ Wikipedia</a></li>
+          <li><a href="https://www.naturezabela.com.br/2018/05/mantis-lagosta-boxeadora.html" target="_blank" alt="link referencia do site Natureza Bela">⟶ Natureza Bela</a></li>
+          <li><a href="https://www.aquaa3.com.br/curiosidades-camarao-mantis/#Camarao_Mantis_e_um_perfurador_e_esmagador" target="_blank" alt="link referencia do site Aquaa3">⟶ Aquaa3</a></li>
+        </ul>
+      </section>
+      <section class="secao4">
+        <div class="video">
+          <h1>Assista ao Vídeo</h1>
+          <iframe class="tamanhovideo" alt="Vídeo relacionado ao Animal" width="560" height="315" src="https://www.youtube.com/embed/E0Li1k5hGBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </section>
+      <footer id="contato">
+        <p class="rodapé">"Conteúdo compilado por Japa, 2021".</p>
+      </footer>
+    </article>
+
   </body>
 </html>
