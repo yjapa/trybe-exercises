@@ -65,7 +65,7 @@ class App extends React.Component {
           onClick={ this.handleButtonThree }
           style={{ backgroundColor: this.getButtonColor(clicksBtnThree) }}
         >
-          Botãoo 3 | Count = { clicksBtnThree }
+          Botão 3 | Count = { clicksBtnThree }
         </button>
       </div>
     );
