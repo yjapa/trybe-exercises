@@ -37,7 +37,7 @@ class App extends React.Component {
     }), () => {
       // Aqui imprimimos a cor no console após o setState atualizar
       // a quantidade de clicks no botão
-      console.log(`Botão 3 ${this.getButtonColor(this.state.clicksBtnThree)}`);
+      console.log(`Bootão 3 ${this.getButtonColor(this.state.clicksBtnThree)}`);
     });
   }
 
