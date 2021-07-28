@@ -27,7 +27,7 @@ class App extends React.Component {
     this.setState(({ clicksBtnTwo }) => ({
       clicksBtnTwo: clicksBtnTwo + 1,
     }), () => {
-      console.log(`Botão 2 ${this.getButtonColor(this.state.clicksBtnTwo)}`);
+      console.log(`botão 2 ${this.getButtonColor(this.state.clicksBtnTwo)}`);
     });
   }
   
