@@ -1,9 +1,7 @@
 import { cleanup } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
 import renderWithRedux from './renderWithRedux'
 import App from './App';
-
-
+import userEvent from '@testing-library/user-event';
 
 describe('testing clicks', () => {
   beforeEach(cleanup);
