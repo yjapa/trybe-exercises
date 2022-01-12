@@ -14,6 +14,7 @@ app.get('/recipes', function (req, res) {
   res.status(200).json(recipes);
 });
 
+
 app.get('/recipes/pesquisar', function (req, res) {
   const { name, maxPrice } = req.query;
   const filteredRecipes = recipes.filter((r) => r.name.includes(name) && r.preco < parseInt(maxPrice));
