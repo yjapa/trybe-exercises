@@ -12,8 +12,7 @@ const recipes = [
 
 app.get('/recipes', function (req, res) {
   res.status(200).json(recipes);
-});
-
+});s
 
 app.get('/recipes/pesquisar', function (req, res) {
   const { name, maxPrice } = req.query;
